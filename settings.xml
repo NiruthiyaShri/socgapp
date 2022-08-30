@@ -1,0 +1,17 @@
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+ 
+      <servers>
+        <server>
+          <id>socgenapp-releases</id>
+          <username>socgenuser</username>
+          <password>socgenuser</password>
+        </server>
+        <server>
+          <id>socgenapp-snapshots</id>
+          <username>socgenuser</username>
+          <password>socgenuser</password>
+        </server>
+      </servers>
+
+    </settings>
