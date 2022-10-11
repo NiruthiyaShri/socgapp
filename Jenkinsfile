@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                mymethod "socgen"
+                mymethod1 "socgen"
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/socgenapp/socgapp.git'
                 // Run Maven on a Unix agent.
