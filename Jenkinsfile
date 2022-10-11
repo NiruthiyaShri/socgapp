@@ -1,3 +1,8 @@
+def mymethod(String name = 'human') {
+  echo "Hello, ${name}."
+  echo "Hello, ${name}."
+}
+
 pipeline {
     agent any
 
@@ -9,6 +14,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                mymethod "socgen"
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/socgenapp/socgapp.git'
                 // Run Maven on a Unix agent.
