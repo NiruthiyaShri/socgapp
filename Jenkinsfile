@@ -35,5 +35,10 @@ pipeline {
                 }
             }
         }
+      stage('deploy'){
+        
+        withDockerContainer(args: '-p 80:80', image: 'nginx') {
+    // some block
+}
     }
 }
