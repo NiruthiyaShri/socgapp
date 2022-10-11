@@ -13,7 +13,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/socgenapp/socgapp.git'
 
                 // Run Maven on a Unix agent.
-                sh "mvn -gs settings.xml -Dmaven.test.failure.ignore=true clean deploy"
+                sh "mvn -gs settings.xml -Dmaven.test.failure.ignore=true clean deploy sonar:sonar"
 
                
             }
