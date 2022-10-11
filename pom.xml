@@ -26,14 +26,14 @@
       <uniqueVersion>false</uniqueVersion>
       <id>socgenapp-releases</id>
       <name>socgenapp-releases</name>
-      <url>http://20.120.38.236:8081/repository/socgenapp-releases/</url>
+      <url>http://13.232.2.37:8081/repository/socgenapp-releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>socgenapp-snapshots</id>
       <name>socgenapp-snapshots</name>
-      <url>http://20.120.38.236:8081/repository/socgenapp-snapshots/</url>
+      <url>http://13.232.2.37:8081/repository/socgenapp-snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
   </distributionManagement>
