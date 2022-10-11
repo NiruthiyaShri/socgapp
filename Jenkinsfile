@@ -11,11 +11,10 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/socgenapp/socgapp.git'
-
                 // Run Maven on a Unix agent.
-                sh "mvn -gs settings.xml -Dmaven.test.failure.ignore=true clean deploy sonar:sonar"
-
-               
+                sh "mvn -gs settings.xml -Dmaven.test.failure.ignore=true clean deploy sonar:sonar -Dsonar.projectKey=socgenapp \
+  -Dsonar.host.url=http://13.233.200.83:9000 \
+  -Dsonar.login=sqp_0a47ff2d571925d042fe0120fa60699a9c3e015f"
             }
 
             post {
